@@ -1364,6 +1364,7 @@ def get_driver(
             or browser_name == constants.Browser.EDGE
         )
     ):
+        print(f"Looking for binary specified {binary_location}")
         if not os.path.exists(binary_location):
             log_d(
                 "\nWarning: The Chromium binary specified (%s) was NOT found!"
