@@ -3392,6 +3392,8 @@ def get_local_driver(
                                     uc_path = os.path.realpath(uc_path)
                                     print(uc_path)
                                 print(b_path, "binary path")
+                                if b_path:
+                                    print(os.path.exists(b_path))
                                 driver = undetected.Chrome(
                                     options=chrome_options,
                                     user_data_dir=user_data_dir,
