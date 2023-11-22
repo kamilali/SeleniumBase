@@ -3400,6 +3400,7 @@ def get_local_driver(
                                 )
                                 uc_activated = True
                             except URLError as e:
+                                print(e)
                                 if cert in e.args[0] and IS_MAC:
                                     mac_certificate_error = True
                                 else:
